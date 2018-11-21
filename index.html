@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Crystal Collector</title>
+</head>
+<body>
+    
+    <div class="container" style="color: black; ">
+        <div class="row" style="margin-left: 20px;">
+            <h1 class="header">Crystal Collector Game</h1>
+        </div>
+
+        <div class="row" style="margin-left: 20px;" >
+            <h2 class="game-title">Rules of the game</h2>
+        </div>
+
+        <div class="game-body" style="margin-left: 20px; font-size: 20px">
+            <p>
+                You will be given a random number at the start of the game.
+                <br>
+                There are four crystal below.  By clicking on a crystal, you will add a specific amount of points to your total score.
+                <br>
+                You win the game by matching your total score to the ramdom number.
+                <br>
+                You lose the game if your total score goes above the random number.
+                <br>
+                The value of each crystal is hidden from you until you click on it.
+                <br>  
+                Each time when the game starts, the game will change the values of each crystal.
+                <br> 
+                When the game restartes the values of each crystal change.
+                <br>  
+                Good Luck!!
+            </p>
+        </div>
+    </div>
+
+    <div class="container reset">
+        <div class="row">
+            <div class="col-4">
+                <div class="numberMatch">
+                    <h3>Match Number:<span id="matchNumber"></span></h3>
+                </div>
+
+                <div class="yourNumber">
+                    <h3>Your total Number:<span id="totalNumber"></span></h3>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="winLose">
+                    <h3>Wins: <span id="winNumber"></span></h3>
+                    
+                    <h3>Lose: <span id="loseNumber"></span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="buttons container">
+        <div class="row">
+            <div class="col-2">
+                <button><img class="image" id="num1" src="assets/images/blue.png"></button>
+            </div>
+            <div class="col-2">
+                <button><img class="image" id="num2" src="assets/images/green.png"></button>
+            </div>
+            <div class="col-2">
+                <button><img class="image" id="num3" src="assets/images/red.png"></button>
+            </div>
+            <div class="col-2">
+                <button><img class="image" id="num4" src="assets/images/yellow.png"></button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
